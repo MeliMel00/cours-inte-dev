@@ -1,19 +1,105 @@
 a {
   text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style-type: none;
 }
 
 * {
   padding: 0;
   margin: 0;
   font-family: Fredoka;
+  font-size: 10px;
+}
+
+body {
+  background-color: black;
 }
 
 header {
-  background-color: azure;
+  background-image: url(/img/background.png);
+  background-position: center;
+  background-size: cover;
+  padding: 0 9.5% 0 0;
+  padding-top: 1em;
+  padding-bottom: 5em;
+  height: 681px;
 }
 header nav {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+header nav .logo {
+  position: relative;
+  left: 1em;
+}
+header nav ul {
+  font-size: 1.6em;
+  display: flex;
+  justify-content: center;
+}
+header nav ul a {
+  color: white;
+  padding: 5px;
+  margin: 5px;
+}
+header .hero {
+  color: white;
+  padding: 0 15%;
+  text-align: center;
+  height: 46em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header .hero h2 {
+  font-size: 3em;
+}
+header .hero h1 {
+  font-size: 5em;
+}
+header .hero .button {
+  font-size: 1.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: blanchedalmond;
+  width: 10em;
+  height: 2em;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 4.5% 1fr 4.5%;
+  grid-template-rows: auto;
+}
+main .about-us {
+  grid-column: 2;
+  padding: 1em 1em;
+  text-align: start;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 10em;
+}
+main .about-us .portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  border: 1px solid black;
+  border-radius: 15em;
+  width: 10em;
+  height: 2em;
+}
+main aside {
+  grid-column: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
